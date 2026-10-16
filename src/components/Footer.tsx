@@ -1,4 +1,5 @@
-import { Github, Linkedin, Rocket, Share2, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Rocket, Share2, Mail, Heart, Terminal } from "lucide-react";
+import { Link } from "react-router-dom";
 import { personalInfo } from "@/data/portfolio";
 
 export const Footer = () => {
@@ -83,12 +84,19 @@ export const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="pt-8 border-t border-border text-center">
+          <div className="pt-8 border-t border-border text-center space-y-3">
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
               © {currentYear} {personalInfo.name}. Built with{" "}
               <Heart className="h-4 w-4 text-red-500 fill-red-500" /> and{" "}
               <span className="text-primary font-semibold">React</span>
             </p>
+            <Link
+              to="/ubuntu"
+              className="inline-flex items-center gap-2 font-mono text-xs text-muted-foreground/70 hover:text-primary transition-colors"
+            >
+              <Terminal className="h-3.5 w-3.5" />
+              $ ./start_desktop_mode.sh
+            </Link>
           </div>
         </div>
       </div>

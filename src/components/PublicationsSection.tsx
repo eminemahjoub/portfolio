@@ -9,6 +9,7 @@ export const PublicationsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
+            <p className="section-label mb-3">~/publications</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Publications & <span className="text-gradient">Writing</span>
             </h2>

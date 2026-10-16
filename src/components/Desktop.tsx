@@ -12,7 +12,6 @@ import { ContactApp } from "./apps/ContactApp";
 import { PortfolioBrowser } from "./apps/PortfolioBrowser";
 import { TerminalApp } from "./apps/TerminalApp";
 import { useNotifications, NotificationSystem } from "./UbuntuNotification";
-import { GitHubStats } from "./GitHubStats";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export type AppType = "portfolio" | "terminal" | "linkedin" | "github" | "launchpad" | "mastodon" | "blog" | "resume" | "about" | "projects" | "skills" | "experience" | "education" | "contact" | null;

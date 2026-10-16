@@ -356,8 +356,8 @@ export const PortfolioBrowser = () => {
               </div>
             </div>
 
-            {/* GitHub Statistics */}
-            <div className="mb-6">
+            {/* GitHub Statistics — force dark tokens inside the dark browser chrome */}
+            <div className="mb-6 dark">
               <GitHubStats />
             </div>
 

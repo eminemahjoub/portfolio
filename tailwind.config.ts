@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        display: ["Space Grotesk", "Inter", "sans-serif"],
+        mono: ["Ubuntu Mono", "JetBrains Mono", "Monaco", "Menlo", "Consolas", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

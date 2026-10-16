@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,79 +10,79 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 210 20% 15%;
+    --background: 210 33% 98%;
+    --foreground: 222 25% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card-foreground: 222 25% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover-foreground: 222 25% 12%;
 
-    --primary: 200 62% 66%;
+    --primary: 199 89% 44%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 200 70% 75%;
+    --primary-glow: 196 90% 60%;
 
-    --secondary: 210 30% 92%;
-    --secondary-foreground: 210 20% 15%;
+    --secondary: 210 30% 93%;
+    --secondary-foreground: 222 25% 12%;
 
-    --muted: 210 30% 94%;
-    --muted-foreground: 210 15% 50%;
+    --muted: 210 30% 93%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 200 62% 66%;
+    --accent: 199 89% 44%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 25% 88%;
-    --input: 210 25% 90%;
-    --ring: 200 62% 66%;
+    --border: 214 25% 88%;
+    --input: 214 25% 88%;
+    --ring: 199 89% 44%;
 
     --radius: 0.75rem;
 
     /* Portfolio-specific tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(200, 62%, 66%), hsl(200, 70%, 75%));
-    --gradient-hero: linear-gradient(180deg, hsl(210, 40%, 98%), hsl(200, 50%, 96%));
-    --shadow-card: 0 4px 20px -2px hsl(200, 50%, 50% / 0.1);
-    --shadow-glow: 0 0 40px hsl(200, 62%, 66% / 0.3);
+    --gradient-primary: linear-gradient(135deg, hsl(199, 89%, 44%), hsl(196, 90%, 60%));
+    --gradient-hero: linear-gradient(180deg, hsl(210, 33%, 98%), hsl(200, 50%, 95%));
+    --shadow-card: 0 4px 20px -2px hsl(199, 50%, 40% / 0.08);
+    --shadow-glow: 0 8px 32px -4px hsl(199, 89%, 44% / 0.25);
   }
 
   .dark {
-    --background: 210 30% 8%;
-    --foreground: 210 20% 95%;
+    --background: 222 30% 7%;
+    --foreground: 210 25% 95%;
 
-    --card: 210 25% 12%;
-    --card-foreground: 210 20% 95%;
+    --card: 220 26% 10%;
+    --card-foreground: 210 25% 95%;
 
-    --popover: 210 25% 12%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 220 26% 10%;
+    --popover-foreground: 210 25% 95%;
 
-    --primary: 200 62% 66%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 200 70% 75%;
+    --primary: 196 90% 55%;
+    --primary-foreground: 222 30% 7%;
+    --primary-glow: 190 95% 65%;
 
-    --secondary: 210 25% 16%;
-    --secondary-foreground: 210 20% 95%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 210 25% 95%;
 
-    --muted: 210 25% 16%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 15% 60%;
 
-    --accent: 200 62% 66%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 196 90% 55%;
+    --accent-foreground: 222 30% 7%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 25% 20%;
-    --input: 210 25% 20%;
-    --ring: 200 62% 66%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 196 90% 55%;
 
     /* Portfolio-specific tokens - dark mode */
-    --gradient-primary: linear-gradient(135deg, hsl(200, 62%, 66%), hsl(200, 70%, 75%));
-    --gradient-hero: linear-gradient(180deg, hsl(210, 30%, 8%), hsl(210, 30%, 12%));
-    --shadow-card: 0 4px 20px -2px hsl(200, 50%, 50% / 0.2);
-    --shadow-glow: 0 0 40px hsl(200, 62%, 66% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(196, 90%, 55%), hsl(190, 95%, 65%));
+    --gradient-hero: linear-gradient(180deg, hsl(222, 30%, 7%), hsl(220, 28%, 10%));
+    --shadow-card: 0 4px 20px -2px hsl(0, 0%, 0% / 0.4);
+    --shadow-glow: 0 8px 32px -4px hsl(196, 90%, 55% / 0.3);
   }
 }
 
@@ -93,27 +93,23 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Ubuntu Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
   }
 
   html {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
   }
 
-  #root {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+  ::selection {
+    @apply bg-primary/25;
   }
 }
 
@@ -130,6 +126,17 @@ All colors MUST be HSL.
   .card-glow:hover {
     box-shadow: var(--shadow-glow);
     transform: translateY(-4px);
+  }
+
+  /* Terminal-style section eyebrow, e.g. ~/projects */
+  .section-label {
+    @apply font-mono text-sm text-primary tracking-widest uppercase;
+  }
+
+  /* Subtle dotted/grid backdrop for hero */
+  .bg-dots {
+    background-image: radial-gradient(hsl(var(--foreground) / 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 }
 
