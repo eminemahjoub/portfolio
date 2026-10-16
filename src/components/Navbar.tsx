@@ -25,11 +25,10 @@ export const Navbar = () => {
 
   const navItems = [
     { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
+    { label: "Work", href: "#projects" },
+    { label: "Services", href: "#services" },
     { label: "Experience", href: "#experience" },
-    { label: "Skills", href: "#skills" },
     { label: "Research", href: "#research" },
-    { label: "Community", href: "#community" },
     { label: "Contact", href: "#contact" },
   ];
 

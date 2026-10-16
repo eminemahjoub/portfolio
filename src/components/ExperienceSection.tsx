@@ -1,9 +1,10 @@
-import { Users, GraduationCap, Satellite, Code, Video, Award } from "lucide-react";
+import { Users, GraduationCap, Satellite, Code, Video, Award, Calendar, MapPin, type LucideIcon } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { experience } from "@/data/portfolio";
+import { CountryFlag } from "@/components/CountryFlag";
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, LucideIcon> = {
   users: Users,
   "graduation-cap": GraduationCap,
   satellite: Satellite,
@@ -54,7 +55,12 @@ export const ExperienceSection = () => {
                         <div className="flex-grow space-y-3">
                           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
                             <div>
-                              <h3 className="text-xl font-bold">{item.title}</h3>
+                              <h3 className="text-xl font-bold flex items-center gap-2">
+                                {item.title}
+                                {item.countryCode && (
+                                  <CountryFlag code={item.countryCode} size={14} />
+                                )}
+                              </h3>
                               <p className="text-muted-foreground">
                                 {item.organization}
                               </p>
@@ -73,9 +79,16 @@ export const ExperienceSection = () => {
                             {item.description}
                           </p>
 
-                          <p className="text-xs text-muted-foreground font-medium">
-                            {item.period}
-                          </p>
+                          <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground font-medium">
+                            <span className="flex items-center gap-1.5">
+                              <Calendar className="h-3.5 w-3.5" />
+                              {item.period}
+                            </span>
+                            <span className="flex items-center gap-1.5">
+                              <MapPin className="h-3.5 w-3.5" />
+                              {item.location}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </Card>

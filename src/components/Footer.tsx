@@ -24,13 +24,20 @@ export const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                {["About", "Projects", "Experience", "Skills", "Community", "Contact"].map((item) => (
-                  <li key={item}>
+                {[
+                  { label: "About", href: "#about" },
+                  { label: "Work", href: "#projects" },
+                  { label: "Services", href: "#services" },
+                  { label: "Experience", href: "#experience" },
+                  { label: "Research", href: "#research" },
+                  { label: "Contact", href: "#contact" },
+                ].map((item) => (
+                  <li key={item.href}>
                     <a
-                      href={`#${item.toLowerCase()}`}
+                      href={item.href}
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      {item}
+                      {item.label}
                     </a>
                   </li>
                 ))}
@@ -85,18 +92,29 @@ export const Footer = () => {
 
           {/* Copyright */}
           <div className="pt-8 border-t border-border text-center space-y-3">
+            <p className="text-sm text-muted-foreground">
+              {personalInfo.email}
+            </p>
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
               © {currentYear} {personalInfo.name}. Built with{" "}
               <Heart className="h-4 w-4 text-red-500 fill-red-500" /> and{" "}
               <span className="text-primary font-semibold">React</span>
             </p>
-            <Link
-              to="/ubuntu"
-              className="inline-flex items-center gap-2 font-mono text-xs text-muted-foreground/70 hover:text-primary transition-colors"
-            >
-              <Terminal className="h-3.5 w-3.5" />
-              $ ./start_desktop_mode.sh
-            </Link>
+            <div className="flex items-center justify-center gap-6">
+              <Link
+                to="/ubuntu"
+                className="inline-flex items-center gap-2 font-mono text-xs text-muted-foreground/70 hover:text-primary transition-colors"
+              >
+                <Terminal className="h-3.5 w-3.5" />
+                $ ./start_desktop_mode.sh
+              </Link>
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="text-xs text-muted-foreground/70 hover:text-primary transition-colors"
+              >
+                Back to top ↑
+              </button>
+            </div>
           </div>
         </div>
       </div>

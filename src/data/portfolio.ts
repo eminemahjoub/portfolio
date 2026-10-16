@@ -21,26 +21,29 @@ export const projects = [
   {
     id: 1,
     title: "Predicare",
+    category: "HealthTech",
     description: "AI-driven predictive medicine system for preventive healthcare",
     longDescription: "AI-powered platform that analyzes patient data to predict health risks and provide preventive care recommendations. Uses machine learning models for early disease detection.",
     tags: ["AI", "Healthcare", "Machine Learning", "Python", "TensorFlow"],
     featured: true,
-    github: "https://github.com/eminemahjoub",
+    github: "https://github.com/eminemahjoub/systeme_medecine_predictive",
     countryCode: "TN", // Tunisia - can be updated based on actual project location
   },
   {
     id: 2,
     title: "Plastoken",
+    category: "Blockchain",
     description: "ERC-20 token and blockchain marketplace for recycling",
     longDescription: "Blockchain-based token ecosystem for incentivizing plastic recycling. Built on Ethereum, enabling transparent tracking and reward distribution in circular economy.",
     tags: ["Blockchain", "Solidity", "ERC-20", "Ethereum", "Web3"],
     featured: true,
-    github: "https://github.com/eminemahjoub",
+    github: "https://github.com/eminemahjoub/plascoinapp",
     countryCode: "TN", // Tunisia
   },
   {
     id: 3,
     title: "Sign Language Recognition System",
+    category: "Accessibility",
     description: "Real-time video processing with 3D avatar animation",
     longDescription: "Computer vision system using MediaPipe for real-time sign language recognition with 3D avatar feedback for educational purposes.",
     tags: ["Computer Vision", "MediaPipe", "Python", "AI", "Accessibility"],
@@ -51,6 +54,7 @@ export const projects = [
   {
     id: 4,
     title: "Automatic Mail Sorting System",
+    category: "IoT & Hardware",
     description: "Raspberry Pi + OCR for postal automation",
     longDescription: "Automated mail sorting solution using Raspberry Pi, OCR technology, and mechanical actuators for efficient postal processing.",
     tags: ["Raspberry Pi", "OCR", "Automation", "Python", "Hardware"],
@@ -60,16 +64,18 @@ export const projects = [
   {
     id: 5,
     title: "EduGame Platform",
+    category: "EdTech",
     description: "Gamified learning system with AI-powered hints",
     longDescription: "Interactive educational platform that uses gamification principles and AI to provide personalized learning experiences and intelligent hints.",
     tags: ["AI", "Education", "Gamification", "React", "Node.js"],
     featured: true,
-    github: "https://github.com/eminemahjoub",
+    github: "https://github.com/eminemahjoub/gamified-challenge",
     countryCode: "TN", // Tunisia
   },
   {
     id: 6,
     title: "CTF & Pentesting Platform",
+    category: "Cybersecurity",
     description: "Gamified cybersecurity learning environment",
     longDescription: "Interactive platform for learning cybersecurity through Capture The Flag challenges and hands-on penetration testing exercises.",
     tags: ["Cybersecurity", "Web Development", "Node.js", "React", "Education"],
@@ -79,6 +85,7 @@ export const projects = [
   {
     id: 7,
     title: "Aalemni App",
+    category: "Accessibility",
     description: "Accessibility platform for deaf people",
     longDescription: "Mobile educational application designed for deaf students, featuring sign language integration and accessible learning materials. Developed in collaboration with Prime Ministry and World Bank.",
     tags: ["Accessibility", "Mobile", "Education", "Social Impact"],
@@ -88,6 +95,7 @@ export const projects = [
   {
     id: 8,
     title: "AI-Powered Chest Disease Detection",
+    category: "HealthTech",
     description: "CNN-based diagnostic system",
     longDescription: "Deep learning system using Convolutional Neural Networks to detect and classify chest diseases from medical imaging.",
     tags: ["AI", "CNN", "Healthcare", "Python", "TensorFlow"],
@@ -97,6 +105,7 @@ export const projects = [
   {
     id: 9,
     title: "Voice-Controlled Search Extension",
+    category: "Accessibility",
     description: "Accessibility tool for visually impaired users",
     longDescription: "Browser extension that enables voice-controlled web search and navigation for enhanced accessibility.",
     tags: ["Accessibility", "JavaScript", "Voice Recognition", "Web Extension"],
@@ -106,10 +115,11 @@ export const projects = [
   {
     id: 10,
     title: "Plastic Recycling IoT System",
+    category: "IoT & Hardware",
     description: "Real-time digitized recycling system",
     longDescription: "IoT-enabled smart bins with sensors that track plastic waste in real-time, providing analytics dashboards for waste management optimization.",
     tags: ["IoT", "Sensors", "Data Analytics", "Raspberry Pi", "Arduino"],
-    github: "https://github.com/eminemahjoub",
+    github: "https://github.com/eminemahjoub/IOT-detecteur-hum-temp-mvt",
     countryCode: "TN", // Tunisia
   },
 ];
